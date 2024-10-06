@@ -32,7 +32,7 @@ def led_strip(is_detected):
 
 while True:
     dis = distance()
-    is_detected = dis < 10  # 30cm以内であれば反応したとみなす
+    is_detected = dis < 10  # 10cm以内であれば反応したとみなす
     led_strip(is_detected)
     print("Distance: %.2f" % dis)
     time.sleep_ms(300)
